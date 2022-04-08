@@ -6,6 +6,7 @@
 
 function check(a,x){
     return a.findIndex((val) => val === x) >= 0
+    //return a.includes(b)
 };
 
 console.log(check([66, 101], 66)) //should equal true
