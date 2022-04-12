@@ -5,9 +5,7 @@
 //     If both characters are letters and not the same case, return 0
 
 function sameCase(a, b){
-    if(a.toLowerCase() === a.toUpperCase()){ //checks if integer
-        return -1
-    }else if(b.toLowerCase() === b.toUpperCase()){
+    if(a.toLowerCase() === a.toUpperCase() || b.toLowerCase() === b.toUpperCase()){ //checks if integer
         return -1
     }
 
