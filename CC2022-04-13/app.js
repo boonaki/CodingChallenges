@@ -7,4 +7,4 @@ function nameShuffler(str){
     return arr.join(' ')
 }
 
-console.log('john appleseed') //should equal 'appleseed john'
+console.log(nameShuffler('john appleseed')) //should equal 'appleseed john'
