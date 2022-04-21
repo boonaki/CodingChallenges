@@ -9,6 +9,5 @@ function between(a, b) {
     return arr
 }
 
-console.log(between(1, 4)) //should output 
-console.log(between(-2, 2)) //should output 
-console.log(between()) //should output 
+console.log(between(1, 4)) //should output [ 1, 2, 3, 4 ]
+console.log(between(-2, 2)) //should output [ -2, -1, 0, 1, 2 ]
