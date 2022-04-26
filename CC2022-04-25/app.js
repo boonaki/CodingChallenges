@@ -8,11 +8,12 @@
 //The string lengths will be from 1 character up to 10 characters, but will never be empty.
 
 function capitalizeWord(word) {
-    word[0].toUpperCase();
-    return word;
+    word = word.split('')
+    word.splice(0, 1, `${word[0].toUpperCase()}`)
+    return word.join('')
 }
 
-console.log(capitalizeWord(word)) //should output
-console.log(capitalizeWord(word)) //should output
-console.log(capitalizeWord(word)) //should output
-console.log(capitalizeWord(word)) //should output
+console.log(capitalizeWord('word')) //should output Word
+console.log(capitalizeWord('i')) //should output I
+console.log(capitalizeWord('glasswear')) //should output Glasswear
+console.log(capitalizeWord('eat')) //should output Eat
