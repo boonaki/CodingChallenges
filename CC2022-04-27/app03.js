@@ -3,9 +3,6 @@
 //Let's play! You have to return which player won! In case of a draw return Draw!.
 
 function rps(p1, p2){
-    let r = 'r'
-    let p = 'p'
-    let s = 's'
     p1 = p1.split('')
     p1 = p1[0]
     p2 = p2.split('')
