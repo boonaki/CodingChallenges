@@ -3,21 +3,13 @@
 // Our deck (is preloaded):
 
 function defineSuit(card) {
-    card = card.charCodeAt(1)
-    switch(card){
-        case 9827:
-          return "clubs"
-          break;
-        case 9824:
-          return 'spades'
-          break;
-        case 9830:
-          return 'diamonds'
-          break;
-        case 9829:
-          return 'hearts'
-          break;
+    const s = {
+        "♣": "clubs",
+        "♠": "spades",
+        "♦": "diamonds",
+        "♥": "hearts"
     }
+    return s[card.charAt(card.length - 1)]
 }
 
 console.log(defineSuit("3♣")) //should output 'clubs'
