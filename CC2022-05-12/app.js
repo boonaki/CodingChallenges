@@ -12,3 +12,7 @@
 function findOdd(arr){
     return arr.reduce((acc, curr) => acc ^ curr)
 }
+
+console.log(findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1])) //should output 4
+console.log(findOdd([0,1,0,1,0])) //should output 0
+console.log(findOdd([1,1,2])) //should output 1
