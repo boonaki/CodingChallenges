@@ -14,7 +14,7 @@
 //R: return a new string with the names of the people that like it
 //E:
 
-function likes(name){
+function likes(names){
     //names.length === 1 return basic string
     //names.length === 2 return and string
     //names.length === 3 return ,and string
