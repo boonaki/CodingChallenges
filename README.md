@@ -1,5 +1,5 @@
 # Coding Challenges
-A collection of my completed solutions to various challenges in Javascript
+A collection of my completed solutions to daily coding challenges in Javascript.
 
 <!-- ![alt tag](http://placecorgi.com/1200/650) -->
 
