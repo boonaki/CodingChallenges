@@ -1,31 +1,24 @@
 # Coding Challenges
-A collection of my solutions to various challenges in Javascript
+A collection of my completed solutions to various challenges in Javascript
 
 <!-- ![alt tag](http://placecorgi.com/1200/650) -->
 
-## How It's Made:
+## How It's Done:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** JavaScript
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
-
-## Optimizations
-*(optional)*
-
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+After finding a challenge, I go through a process called PREP, whether it is on paper or in my IDE, and solve the challenge given, with test cases to see results. After solutions are confirmed, the program is then pushed to this repository via the command line.
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+Coding is fun.
 
 ## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these couple examples where I have used ideas I have gained from doing coding challenges:
 
-**Palettable:** https://github.com/alecortega/palettable
+**Tic-Tac-Toe:** https://github.com/boonaki/HHTicTacToe
 
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
+**Calculator:** https://github.com/boonaki/100devs-calculator
 
 
 
