@@ -1,7 +1,7 @@
 # Coding Challenges
 A collection of my completed solutions to daily coding challenges in Javascript.
 
-<!-- ![alt tag](http://placecorgi.com/1200/650) -->
+![alt tag](https://www.codewars.com/users/boonaki/badges/large)
 
 ## How It's Done:
 
