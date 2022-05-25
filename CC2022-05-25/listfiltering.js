@@ -12,7 +12,7 @@
 function filter_list(arr){
     //run filter method
     //add only when typeof elem is === 'number'
-    return l.filter((elem) => typeof elem === 'number')
+    return arr.filter((elem) => typeof elem === 'number')
 }
 
 console.log(filter_List([1,2,'a','b']))// [1,2]
