@@ -1,5 +1,5 @@
 # Coding Challenges
-A collection of my completed solutions to daily coding challenges in Javascript.
+A collection of my completed solutions to daily coding exercises to sharpen problem solving skills.
 
 ![alt tag](https://www.codewars.com/users/boonaki/badges/large)
 
@@ -7,7 +7,7 @@ A collection of my completed solutions to daily coding challenges in Javascript.
 
 **Tech used:** JavaScript
 
-After finding a challenge, I go through a process called PREP, whether it is on paper or in my IDE, and solve the challenge given, with test cases to see results. After solutions are confirmed, the program is then pushed to this repository via the command line.
+Everyday, I find challenges to complete that test my limits, and once completed, my solution is then pushed to this repository via the command line.
 
 ## Lessons Learned:
 
