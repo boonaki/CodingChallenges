@@ -7,7 +7,7 @@ A collection of my completed solutions to daily coding exercises to sharpen prob
 
 **Tech used:** JavaScript
 
-Everyday, I find challenges to complete that test my limits, and once completed, my solution is then pushed to this repository via the command line.
+Everyday, I find challenges to complete that test my knowledge, and once completed, my solution is then pushed to this repository via the command line.
 
 ## Lessons Learned:
 
