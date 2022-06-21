@@ -41,7 +41,6 @@ function countSmileys(arr){
         }
     })
     return count
-    
 }
 
 console.log(countSmileys([':D',':~)',';~D',':)']))//4
