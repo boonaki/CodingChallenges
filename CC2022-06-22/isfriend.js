@@ -8,7 +8,7 @@
 
 function friend(friends){
     //filter every element that has the length of 4
-    return friends.filter((elem) => elem.split('').length === 4)
+    return friends.filter((elem) => elem.length === 4)
 }
 
 console.log(friend(["Ryan", "Kieran", "Mark"]))//["Ryan", "Mark"]
