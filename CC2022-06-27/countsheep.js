@@ -7,7 +7,7 @@
 function countSheep(arr){
     //filter all elements that are true
     //return length of filtered array
-    return arrayOfSheep.filter((elem) => elem).length
+    return arr.filter((elem) => elem).length
 }
 
 console.log(countSheep([true,  true,  true,  false,
