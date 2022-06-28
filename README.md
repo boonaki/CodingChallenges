@@ -1,13 +1,11 @@
 # Coding Challenges
 A collection of my completed solutions to daily coding exercises to sharpen problem solving skills.
 
-![alt tag](https://www.codewars.com/users/boonaki/badges/large)
-
 ## How It's Done:
 
 **Tech used:** JavaScript
 
-Everyday, I find challenges to complete that test my knowledge, and once completed, my solution is then pushed to this repository via the command line.
+Everyday, I find challenges to complete that test my knowledge, and once completed, my code is then pushed to this repository via the command line.
 
 ## Lessons Learned:
 
