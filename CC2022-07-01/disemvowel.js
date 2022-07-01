@@ -14,4 +14,4 @@ function disemvowel(str){
     return str.join('')
 }
 
-console.log(disemvowel(''))
+console.log(disemvowel("What are you, a communist?"))//"Wht r y,  cmmnst?"
