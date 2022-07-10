@@ -12,9 +12,9 @@ function validatePin(pin){
     //join filtered array
     //return true if filtered string is === pin && pin length === 4 or pinlength is === 6
     if(pin.length === 4 || pin.length === 6){
-        let digits = [0,1,2,3,4,5,6,7,8,9]
+        let digits = ['0','1','2','3','4','5','6','7','8','9']
         let pinCheck = pin.split('')
-        pinCheck = pinCheck.filter((elem) => digits.includes(+elem)).join('')
+        pinCheck = pinCheck.filter((elem) => digits.includes(elem)).join('')
         return pinCheck === pin
     }else{
         return false
