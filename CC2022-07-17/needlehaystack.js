@@ -9,7 +9,7 @@ function findNeedle(array){
     //find indexOf "needle"
     //if indexOf "needle" is greater than/equal to 0 return "found the needle at position _"
     //else return "Your function didn't return anything"
-    let needle = haystack.indexOf('needle')
+    let needle = array.indexOf('needle')
     return needle >= 0 ? `found the needle at position ${needle}` : `Your function didn't return anything`
 }
 
