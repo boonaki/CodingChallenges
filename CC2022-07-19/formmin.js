@@ -9,7 +9,7 @@ function minimumForm(nums){
     //filter out duplicates
     //join array, convert to number and return
     nums = nums.sort((a,b) => a-b).filter((elem,idx) => nums.indexOf(elem) === idx)
-    return nums.join('')
+    return +nums.join('')
 }
 
 console.log(minimumForm([1,3,1]))//13
