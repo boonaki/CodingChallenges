@@ -6,7 +6,7 @@
 
 function remove(string){
     //while the last element is === "!"
-    //slice the slice element (0,-1)
+    //slice the string from the start to last-1 (0,-1)
     //return string
     while(string.slice(-1) === "!"){
         string = string.slice(0,-1)
