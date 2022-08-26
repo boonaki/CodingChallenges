@@ -36,10 +36,7 @@ function reverseOrRotate(str, sz) {
         }
         str = str.slice(sz)
     }
-    console.log(arr)
     return arr.join('')
-
-
 }
 
 console.log(reverseOrRotate("123456987654", 6))//"234561876549"
