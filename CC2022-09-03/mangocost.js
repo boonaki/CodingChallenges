@@ -5,11 +5,10 @@
 //E:
 
 function mango(quantity, price) {
-    //declare total variable
-    //multiply the two values and subtract (q/3 * price)
-    let total = (quantity * price) - ((quantity / 3) * price)
-    return total
+    //multiply price by the quantity subtracted by the rounded value of quantity/3
+    return price * (quantity - Math.floor(quantity/3))
 }
 
 console.log(mango(3, 3))//6
 console.log(mango(9, 5))//30
+console.log(mango(2, 3))//6
