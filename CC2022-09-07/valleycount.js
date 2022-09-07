@@ -51,4 +51,4 @@ function countValleys(str) {
 }
 
 console.log(countValleys('FUFFDDFDUDFUFUF'))//1
-console.log(countValleys('UFFDDFDUDFUFUUFFDDUFFDDUFFDDUDUDUDUDUDUUUUUUUUU'))//
+console.log(countValleys('UFFDDFDUDFUFUUFFDDUFFDDUFFDDUDUDUDUDUDUUUUUUUUU'))//3
