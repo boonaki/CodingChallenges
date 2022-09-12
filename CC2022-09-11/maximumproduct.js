@@ -26,3 +26,18 @@ function adjacentProduct(arr) {
 console.log(adjacentProduct([5, 8]))//40
 console.log(adjacentProduct([1, 2, 3]))//6
 console.log(adjacentProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921]))//-14
+
+function adjacentProductV2(arr){
+    //define new array
+    //loop through length of array and multiply value from current position by next and push into new array
+    //return the highest value from the new array
+    let newArray = []
+    for(let i = 0; i < arr.length-1; i++){
+        newArray.push(arr[i] * arr[i + 1])
+    }
+    return Math.max(...newArray)
+}
+
+console.log(adjacentProductV2([5, 8]))//40
+console.log(adjacentProductV2([1, 2, 3]))//6
+console.log(adjacentProductV2([-23, 4, -5, 99, -27, 329, -2, 7, -921]))//-14
