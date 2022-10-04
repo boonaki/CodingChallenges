@@ -20,9 +20,8 @@ function pokerFlushCheck(cards) {
     let diamonds = "DDDDD"
     let hearts = "HHHHH"
     cards = cards.map((card) => {
-        return card.slice(1)
-    }).join('').split('')
-    cards = cards.filter((c) => c !== '0').join('')
+        return card.slice(-1)
+    }).join('')
     return cards === spades || cards === clubs || cards === diamonds || cards === hearts
 
 }
