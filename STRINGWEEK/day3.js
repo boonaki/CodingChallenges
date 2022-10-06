@@ -4,7 +4,11 @@
 
 function decode(str){
     let key = ['S', 'p', 'a', 'c', 'e']
-    str = str.split('').map((char) => key.includes(char) ? char = " ": char).join('')
+    for(let i = 0 ; i < str.length; i++){
+        if(key.includes(str[i])){
+            str = str.replace(str[i], " ")
+        }
+    }
     return str
 }
 
