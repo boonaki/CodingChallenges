@@ -24,7 +24,6 @@ function day4(str){
     }
     str = str.trim().split(' ').map((word) => word = word.split('').reverse().join('')).reverse().join(' ')
     return "|"+" ".repeat(back)+str+" ".repeat(front)+'|'
-    
 }
 
 console.log(day4("   The white space at the beginning of this string doesn't match the whitespace at the end. "))//" .dne eht ta ecapsetihw eht hctam t'nseod gnirts siht fo gninnigeb eht ta ecaps etihw ehT   "
