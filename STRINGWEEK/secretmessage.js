@@ -38,28 +38,25 @@ function day1(str){
         }
         return char
     }).join('')
-    sillyCat(str)
+    day3(str)
 }
 
-// console.log(day1("e!!Igv)t5lltBcvbdeDH3dVw!OOtI#Aa.ZMDu7WYpP^VVjDc4I50iv#ylhgmQfs"))//e!!Igv)tSlltBcvbdeDHEdVw!OOtI#Aa.ZMDuLWYpP^VVjDchISOiv#ylhgmQfs
 
 /*******************/
 
-function sillyCat(str){
-    //find indexof 'c'
-    //slice string from indexof c + 1 to -1
-    //split remaining string by 'Eek!', reverse and join
-    //return str
-    let idx = str.indexOf('c')
-    str = str.slice(idx+1, str.length).split('Eek!').join('').split(' ').map((elem) => elem = elem.split('').reverse().join('')).reverse().join('')
-    decode(str)
-}
-
-// console.log(sillyCat("e!!Igv)tSlltBcvbdeDHEdVw!OOtI#Aa.ZMDuLWYpP^VVjDchISOiv#ylhgmQfs"))//[ 'fQmghly#', 'iOSIhcDjVV^PpYWLuDMZ.aA#ItOO!wVdEHDedb', '' ]
+// function day2(str){
+//     //find indexof 'c'
+//     //slice string from indexof c + 1 to -1
+//     //split remaining string by 'Eek!', reverse and join
+//     //return str
+//     let idx = str.indexOf('c')
+//     str = str.slice(idx+1, str.length).split('Eek!').join('').split(' ').map((elem) => elem = elem.split('').reverse().join('')).reverse().join('')
+//     day3(str)
+// }
 
 /*******************/
 
-function decode(str){
+function day3(str){
     let key = ['S', 'p', 'a', 'c', 'e']
     for(let i = 0 ; i < str.length; i++){
         if(key.includes(str[i])){
@@ -68,9 +65,6 @@ function decode(str){
     }
     day4(str)
 }
-
-// let test = [ 'fQmghly#', 'iOSIhcDjVV^PpYWLuDMZ.aA#ItOO!wVdEHDedb', '' ].join('')
-// console.log(decode(test))//fQmghly#iO Ih DjVV^P YWLuDMZ. A#ItOO!wVdEHD db
 
 /*******************/
 
@@ -99,13 +93,27 @@ function day4(str){
         }
     }
     str = str.trim().split(' ').map((word) => word = word.split('').reverse().join('')).reverse().join(' ')
-    console.log("|"+" ".repeat(back)+str+" ".repeat(front)+'|')
+    // console.log("|"+" ".repeat(back)+str+" ".repeat(front)+'|')
+    day6(" ".repeat(back)+str+" ".repeat(front), 3)
     // return "|"+" ".repeat(back)+str+" ".repeat(front)+'|'
 }
 
 
 /************ 
-WHAT I HAVE SO FAR
-|vbd DHEdVw!00t1#A .2MDuLWY P^VVjD h1 Oiv#yl4gmQf| <---'|' not included, meant to show where how many spaces there are
+WHAT I HAVE FROM DAY 4
+|sfQmg4ly#viO 1h DjVV^P YWLuDM2. A#1t00!wVdEHD dbv 8tll t)vg1!! | <---'|' not included, meant to show where how many spaces there are
 
 /*******************/
+
+function day6(str, n){
+    let retStr = ""
+    let nth = n-1
+    for(let i = 0; i < str.length; i++){
+        if(i === nth){
+            nth+=n
+        }else{
+            retStr+=str[i]
+        }
+    }
+    console.log(retStr)
+}
