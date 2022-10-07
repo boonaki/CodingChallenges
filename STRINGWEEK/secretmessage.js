@@ -115,5 +115,23 @@ function day6(str, n){
             retStr+=str[i]
         }
     }
-    console.log(retStr)
+    letterSwap(retStr)
+}
+
+function letterSwap(str){
+    str = str.split('').map((char) => {
+        let cc = char.charCodeAt(0)
+        //if lowercase
+        if(cc > 96 && cc < 123){
+            let diff = cc - 'a'.charCodeAt(0)
+            char = String.fromCharCode('Z'.charCodeAt(0) - diff)
+        }else if(cc > 64 && cc < 91){
+            let diff = cc - 'A'.charCodeAt(0)
+            char = String.fromCharCode('z'.charCodeAt(0) - diff)
+        }
+        return char
+    })
+    // return str.join('')
+    console.log(str.join(''))
+    return
 }
