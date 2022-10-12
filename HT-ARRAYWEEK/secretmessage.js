@@ -1,3 +1,4 @@
+//DAY 1
 function day1(arr1,arr2){
     //loop through array
     //loop through each letter,
@@ -11,4 +12,38 @@ function day1(arr1,arr2){
         }
     }
     return true
+}
+
+
+// DAY 2
+function moveLeft(arr, elem){
+    //check if primitive is at array[0], if so return array
+    //return the array with the primitive value swapped with the index to the left
+    if(arr[0] === elem){
+        return arr
+    }else{
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] === elem){
+                let temp = arr[i-1]
+                arr[i-1] = arr[i]
+                arr[i] = temp
+                return arr
+            }
+        }
+    }
+}
+
+function moveRight(arr,elem){
+    if(arr[arr.length] === elem){
+        return arr
+    }else{
+        for(let i = 0 ; i < arr.length; i++){
+            if(arr[i] === elem){
+                let temp = arr[i+1]
+                arr[i+1] = arr[i]
+                arr[i] = temp
+                return arr
+            }
+        }
+    }
 }
