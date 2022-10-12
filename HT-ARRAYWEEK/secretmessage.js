@@ -47,3 +47,13 @@ function moveRight(arr,elem){
         }
     }
 }
+
+// DAY 3
+function aString(arr){
+    //declare new variable to store filtered array with elements that include a are kept in
+    //store filtered array with elements that dont include a into arr
+    //return array.concat(arr)
+    let containsA = arr.filter((elem) => elem.includes('a'))
+    arr = arr.filter((elem) => !elem.includes('a'))
+    return containsA.concat(arr)
+}
