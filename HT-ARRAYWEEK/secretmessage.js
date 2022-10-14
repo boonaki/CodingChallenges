@@ -115,3 +115,24 @@ function moveDown(arr, prim){
         }
     }
 }
+
+
+// DAY 5
+
+function shuffle(arr){
+    //loop through array
+    //find random value within random array
+    //store value and return
+    return arr.map((a) => {
+        for(let i = 0; i < a.length; i++){
+            let rO = Math.floor(Math.random() * arr.length)
+            let rI = Math.floor(Math.random() * a.length)
+            let temp = a[i]
+            a[i] = arr[rO][rI]
+            arr[rO][rI] = temp
+        }
+        return a
+    })
+}
+
+console.log(shuffle([[1,2,3],[4,5,6],[7,8,9]]))//[[8,3,5],[2,4,9],[6,7,1]]
