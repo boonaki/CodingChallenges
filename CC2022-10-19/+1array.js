@@ -4,7 +4,7 @@
 //     only non-negative, single digit integers are allowed
 
 
-//given an array of integers, never negative, never empty, only single digit integers
+//given an array of integers, never empty, may consist of multi digit
 //return the array with the joined array of numbers incremented
 
 function upArray(arr){
