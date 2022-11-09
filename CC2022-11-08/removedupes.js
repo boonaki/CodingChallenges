@@ -8,7 +8,7 @@
 function removeDupes(arr){
     //return a new set, which will remove dupes
     return [...new Set(arr)]
-  }
+}
   
-  console.log(removeDupes([1,2,2,2,3,4,4]))//[1,2,3,4]
-  console.log(removeDupes([17,71,18,17]))//[17,71,18]
+console.log(removeDupes([1,2,2,2,3,4,4]))//[1,2,3,4]
+console.log(removeDupes([17,71,18,17]))//[17,71,18]
