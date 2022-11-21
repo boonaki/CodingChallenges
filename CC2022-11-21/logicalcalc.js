@@ -1,7 +1,7 @@
 //given an array o booleans, and a logical operator in type string
 //return a boolean based on sequentially applying the operator to the values
 
-function logicalCalc(bools, op) {
+function logicalCalc(array, op) {
     //check operator
     //join bools with corresponding operator
     //return check from string with eval method
