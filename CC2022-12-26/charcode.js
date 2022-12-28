@@ -11,14 +11,14 @@ function calcCharCode(x) {
     //map
     //check if element is 7, if so convert to 1
     //return og - copy
-    let str = x.split('').map(e => e = e.charCodeAt(0)).join('').split('')
+    let str = x.split('').map(e => e = e.charCodeAt(0)).join('').split('');
     let copy = str.map(e => {
         if (e === '7') {
             e = '1'
         }
         return e
     })
-    return str.reduce((a, c) => a + +c, 0) - copy.reduce((a, c) => a + +c, 0)
+    return str.reduce((a, c) => a + +c, 0) - copy.reduce((a, c) => a + +c, 0);
 }
 
 console.log(calcCharCode('abcdef'), 6)

@@ -1,0 +1,27 @@
+// John has invited some friends. His list is:
+
+// s = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
+
+// Could you make a program that
+
+//     makes this string uppercase
+//     gives it sorted in alphabetical order by last name.
+
+// When the last names are the same, sort them by first name. Last name and first name of a guest come in the result between parentheses separated by a comma.
+
+//given a string, with names all seperated by a ';'
+//return the string, but make the string uppercase, sort by last name. if last name is the same, sort by first name
+
+function meeting(s){
+    //split by ';'
+    //map
+    //for each name
+    //uppercase then split by ':'
+    //define temp to hold string as (last, first)
+    //convert current to temp
+    //sort
+    let string = s.toUpperCase().split(';').map(e => e.split(':').reverse().join(', ')).sort().join(')(')
+    return '(' + string + ')'
+}
+
+console.log(meeting("Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill"), "(CORWILL, ALFRED)(CORWILL, FRED)(CORWILL, RAPHAEL)(CORWILL, WILFRED)(TORNBULL, BARNEY)(TORNBULL, BETTY)(TORNBULL, BJON)")
