@@ -16,8 +16,8 @@ function pivotIndex(arr){
     //check if both are equal return index
     //if not return -1
     for(let i = 0; i < arr.length; i++){
-        let left = arr.slice(0, i).reduce((a,c) => a + c, 0)
-        let right = arr.slice(i+1, arr.length).reduce((a,c) => a + c, 0)
+        let left = arr.slice(0, i).reduce((a,c) => a + c, 0) ;
+        let right = arr.slice(i+1, arr.length).reduce((a,c) => a + c, 0);
         if(left === right){
            return i
         }
