@@ -7,8 +7,8 @@ function vowel2Index(str){
     //split and map
     //convert character to index
     //return joined array
-    return str.toLowerCase().split('').map((e,i) => {
-        if(e.match(/[AEIOU]/gi)){
+    return str.split('').map((e,i) => {
+        if(e.match(/[aeiou]/gi)){
             e = i + 1;
         }
         return e
