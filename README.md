@@ -3,7 +3,7 @@ A collection of my completed solutions to daily coding exercises to sharpen prob
 
 ## How It's Done:
 
-**Tech used:** JavaScript
+**Tech used:** JavaScript, TypeScript
 
 Everyday, I find challenges to complete that test my knowledge, and once completed, my code is then pushed to this repository via the command line.
 
