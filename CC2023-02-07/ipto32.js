@@ -15,6 +15,7 @@
 function ip4toInt32(n){
     //split string by dots
     //map array, convert each number to 8 digit binary
+    //parse the integer with 2 as the specified radix
 
     let arr = n.split('.').map(e => {
         e = Number(e)
