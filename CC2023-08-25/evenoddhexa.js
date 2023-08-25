@@ -3,7 +3,7 @@
 
 function NumberToHexOrBi(num){
    //define string to return
-   // check if number is odd
+   // check if number is even
    //if so convert to binary
    //else
    //convert to hex
