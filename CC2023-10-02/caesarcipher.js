@@ -22,19 +22,23 @@ function rot13(msg) {
    //convert ascii to letter
    //return joined array
    msg = msg.split('').map((e) => {
-      let current = e.charCodeAt(0) + 13;
-      if (e.toLowerCase() === e) {
-         if (current > 122) {
-            let diff = current - 122;
-            current = 96 + diff;
+      if (e.toLowerCase() != e.toUpperCase()) {
+         let current = e.charCodeAt(0) + 13;
+         if (e.toLowerCase() === e) {
+            if (current > 122) {
+               let diff = current - 122;
+               current = 96 + diff;
+            }
+         } else {
+            if (current > 90) {
+               let diff = current - 90;
+               current = 64 + diff;
+            }
          }
+         return String.fromCharCode(current);
       } else {
-         if (current > 90) {
-            let diff = current - 90;
-            current = 64 + diff;
-         }
+         return e
       }
-      return String.fromCharCode(current);
    })
    return msg.join('')
 }
