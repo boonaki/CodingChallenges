@@ -33,9 +33,9 @@ function xbonacci(sig, n) {
          pushVar += sig[count + i];
       }
       sig.push(pushVar);
-      count++
+      count++;
    }
-   return sig
+   return sig;
 }
 
 console.log(xbonacci([0, 1], 10))//[0,1,1,2,3,5,8,13,21,34]
